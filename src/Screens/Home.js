@@ -1,4 +1,5 @@
 import {
+  Dimensions,
   SafeAreaView,
   ScrollView,
   StyleSheet,
@@ -82,6 +83,7 @@ const Home = () => {
             </TouchableOpacity>
           </View>
         )}
+       
       </View>
     );
   };
@@ -141,6 +143,7 @@ const Home = () => {
         <View>
           <Text style={{ fontSize: 20, fontWeight: "bold", color:income?"green" :"blue" }}>${amount}</Text>
         </View>
+       
       </View>
     );
   };
@@ -163,6 +166,8 @@ const Home = () => {
             <Ionicons name="notifications-outline" size={24} color="white" />
           </TouchableOpacity>
         </View>
+        <View>
+
         <View
           style={{
             flexDirection: "row",
@@ -172,7 +177,7 @@ const Home = () => {
             padding: 10,
             paddingTop: 20,
             borderRadius: 15,
-            paddingBottom: 100,
+            paddingBottom: 60,
           }}
         >
           <View>
@@ -194,9 +199,14 @@ const Home = () => {
             <View>
               <Text style={{ maxWidth: 100 }}>$500 More than last month</Text>
             </View>
+            
           </View>
+          
         </View>
+        
       </View>
+      </View>
+
 
       <View style={{ backgroundColor: "white", flex: 1, marginTop: 40 }}>
         <View style={{ padding: 15 }}>

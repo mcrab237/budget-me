@@ -17,7 +17,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-       
+      <Stack.Screen
+          options={{ headerShown: false }}
+          name="hometab"
+          component={HomeTab}
+        />
         <Stack.Screen
           options={{ headerShown: false }}
           name="login"
@@ -29,11 +33,7 @@ export default function App() {
           name="signup"
           component={Signup}
         />
-         <Stack.Screen
-          options={{ headerShown: false }}
-          name="hometab"
-          component={HomeTab}
-        />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
