@@ -87,7 +87,7 @@ const Login = ({ navigation }) => {
         >
           <TouchableOpacity
             onPress={() => handleLogin()}
-            style={{ paddingHorizontal: 150, paddingVertical: 10 }}
+            style={{ paddingHorizontal: 50, paddingVertical: 10 }}
           >
             <Text style={{ color: "white", fontSize: 15, fontWeight: "bold" }}>
               Login

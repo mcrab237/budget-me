@@ -17,7 +17,7 @@ import { AntDesign } from "@expo/vector-icons";
 const Home = () => {
   const [amount, setAmount] = useState(1000);
   const [checking, setChecking] = useState(632);
-  const [pressed, isPressed] = useState(false);
+  const [pressed, isPressed] = useState(true);
 
   const handlePress = () => {
     isPressed(!pressed);
@@ -53,7 +53,7 @@ const Home = () => {
             </Text>
             <TouchableOpacity onPress={handlePress}>
               <AntDesign
-                name={!pressed ? "arrowdown" : "arrowup"}
+                name={pressed ? "arrowdown" : "arrowup"}
                 size={15}
                 color="black"
                 style={{ marginTop: 3, marginRight: 5 }}
@@ -137,7 +137,7 @@ const Home = () => {
         <View style={{ flex: 1 }}>
           <Text style={{ fontWeight: "bold", fontSize: 20 }}>{name}</Text>
           <Text>
-            {date} | <Text style={{color:status ==="Pending"? "red":"blue"}}>{status}</Text> 
+            {date} | <Text style={{color:status ==="Pending"? "red":"green"}}>{status}</Text> 
           </Text>
         </View>
         <View>
@@ -268,10 +268,10 @@ const Home = () => {
                 name="Youtube"
                 icon="youtube"
                 amount={7.99}
-                days={15}
+                days={2}
                 color="red"
               />
-              <Upcoming name="Google" icon="google" amount={10.5} days={15} />
+              <Upcoming name="Google" icon="google" amount={10.5} days={12} />
               <Upcoming
                 name="Facebook"
                 icon="facebook-square"
@@ -283,7 +283,7 @@ const Home = () => {
                 name="Chegg"
                 icon="book"
                 amount={19.9}
-                days={15}
+                days={20}
                 color="orange"
               />
             </ScrollView>
